@@ -5,14 +5,12 @@ Create link from UNC format strings like outlook automatically when showing text
 
     \\servername\folder
 
-It is also able to specify UNC format strings contains *spaces* with "<" and ">" 
-brackets.
+It is also able to specify UNC format strings contains *spaces* with "<" and ">" brackets.
 
     <\\servername\folder name1\folder name2>
 
-
-The specification is almost same as Outlook.  
-The strings which have already been stored in database will be also replaced since it works at view phase.
+The specification is almost same as Microsoft Outlook.  
+The UNC strings which have already been stored in database will be also shown as link since this plugin works in viewing phase.
 
 ## Installation
 
