@@ -27,8 +27,8 @@ The UNC strings which have already been stored in database will be also shown as
     *) Database Migration is **not** required.
 
 ## Compatibility
-This plugin version is compatible with Redmine 3.4.* in principle.  
-However, this plugin has been tested on Redmine 3.4.5 only currently.
+This plugin version is compatible with Redmine 3.4.* or later in principle.  
+However, this plugin has been tested on Redmine 4.2.5 only currently.
 
 ## Screen Image
 ![Screen Image](assets/images/screenimage.png)  
