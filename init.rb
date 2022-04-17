@@ -1,6 +1,6 @@
 require 'redmine'
 
-ActionDispatch::Callbacks.to_prepare do
+Rails.configuration.to_prepare do
   require_dependency 'redmine/wiki_formatting'
   require_dependency 'redmine/wiki_formatting/textile/formatter'
 
@@ -18,7 +18,7 @@ Redmine::Plugin.register :redmine_unc_autolink do
   name 'UNC Autolink plugin'
   author 'preciousplum'
   description 'Create link from UNC format strings like outlook automatically when showing textile format field.'
-  version '0.0.1'
+  version '0.0.2'
   url 'https://github.com/preciousplum/redmine_unc_autolink'
   author_url 'https://github.com/preciousplum/'
 end

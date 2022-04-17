@@ -8,14 +8,15 @@ module RedmineUncAutolink
     def self.included(base)
       base.send :include, InstanceMethods
       base.class_eval do
-        alias_method_chain :to_html, :contd_plugin
+        alias_method :to_html_without_auto_unc, :to_html
+        alias_method :to_html, :to_html_with_auto_unc
       end
     end
 
     module  InstanceMethods
-      def to_html_with_contd_plugin(*rules)
+      def to_html_with_auto_unc(*rules)
           @toc = []
-          public_method(:to_html).super_method.call(*RULES).to_s
+          public_method(:to_html_without_auto_unc).super_method.call(*RULES).to_s
       end
     end
   end
